@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to Improve Web Site Load Times</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>How to Improve Web Site Load Times</h1>
+
+    <p>As companies adopt ecommerce platforms to sell their goods, one of their first considerations when designing their site must be how long it takes to load their site.  Web site response times are as important as the user interface/experience and accessibility.  Response times are so important because “47% of consumers expect websites to load in two seconds or less — and 40% will abandon a page that takes three or more seconds [to load]” (Crazy Egg).  In a very real sense time is money or in this case lost money from customers abandoning the site.  Customers abandoning your site is only half the battle however.  When a potential customer searches for a site the results they see are influenced by load times.  “Google takes speed into consideration when ranking sites” (Crazy Egg).  Web developers can employ many techniques to reduce website load times.  Typically, developers attempt to make JavaScript elements as efficient as possible, reduce the size of media objects and/or improve the hosting platform.Hello world! This is HTML5 Boilerplate.</p>
+
+    <p>JavaScript adds the functionality to create a dynamic website that can add items to a shopping cart, change the content of a website (text, images, etc.) and much more.  Since JavaScript runs on the client side (on the person’s own web browser) the more JavaScript interactions you add to the site the longer it will take the site to load.  In the current web development landscape, it is nearly impossible to avoid using JavaScript on anything more complex than a personal site.  So, if we can’t avoid using JavaScript what can we do to ensure that our website loads in a timely fashion and responds quickly to user interactions?  The easiest improvement to speed up the load time of a website is to ensure that scripts are loaded last (after the HTML and CSS).  This does not technically improve load times on the backend but from the user’s perspective the site loads significantly faster because they see the content of the site even though the scripts are still loading for a few more seconds in the background.</p>
+
+    <p>The impact JavaScript has on website loads times can also be improved by “minifying” the script files to remove white space.  When we write code, we add in white space and line returns to allow humans to easily read and interpret the code.  A computer, however, does not need this white space to interpret the content of the script.  The white space slows down the computer because the computer still has to read this white space to make sure it does not include any code.  </p>
+
+    <p>When it comes to adding JavaScript to a website, developers don’t have to write all the functionality from scratch.  There are also numerous libraries that are built on top of JavaScript that allow web developers to include them in their site and quickly add the required functionality with minimal coding on their end.  These libraries are often sizeable packages that any visitor needs to load before they can interact with the site.  There are two ways to add these libraries to a site.  The developer can download the content of the library and save it locally on the web server or they can link to a CDN (Content Distribution Network) that contains the library.  To improve load times the web developer should link to a CDN whenever possible.  The reason for this is that it is likely that the client accessing your site will have visited other sites that use the same CDN.  Therefore, the library will be cached in the clients web browser and they will not need to download the contents of the library again.  If you had a local copy of the library they would have to load the contents of your copy.</p>
+
+    <p>JavaScript is not the only culprit affecting a website’s load time, the images, videos and other media hosted on the site also have a significant impact on website performance.  The larger the image or video file the longer it will take the client to load your website.  It is imperative then that images be appropriately sized to not slow load times.  Where possible compress images to reduce their size and impact on the site.  When it comes to videos and sometimes images it is preferable to host the media on an external site (YouTube, Flickr, etc.) because those sites are designed around these media formats and will generally have better response times than your site.</p>
+
+    <p>The client machine is one bottleneck when it comes to a visitor’s ability to load the contents of your site, the other is the performance of your web server.  The I/O and RAM can greatly impact the ability of your site to respond to requests.  When it comes to web hosting there are several options to web site owners.  These include purchasing your own hardware and hosting on your own web server or paying a third party for space on their web server platform.  The former grants you complete control over resource allocation and likely the best results but is the most expensive to setup and maintain for most owners.  The latter is the cost effective option but has varying service levels that impact website load times.  One such option is shared web hosting or shared resources, this allows you to purchase space on a server but you share resources with other sites.  The allocation of resources is variable depending on the demand on all sites sharing the web server resources.  A dedicate server resource allocation guarantees you a certain resource allocation and allows you to purchase the required resources to provide adequate load times for your visitors.  Web hosting is a significant consideration for web site owners when they prepare to deploy their web site.</p>
+
+    <h2>Sources</h2>
+
+    <p>"JavaScript Performance." w3schools.com, w3schools, www.w3schools.com/js/js_performance.asp. Accessed 22 Feb. 2018.</p>
+
+    <p>"Common reasons for poor website performance." DreamHost.com, Dream Host, 12 Nov. 2017, help.dreamhost.com/hc/en-us/articles/216349808-Common-reasons-for-poor-website-performance. Accessed 22 Feb. 2018.</p>
+
+    <p>"20 Ways to Speed Up Your Website and Improve Conversion." The Daily Egg, Crazy Egg, www.crazyegg.com/blog/speed-up-your-website/. Accessed 22 Feb. 2018.</p>
+  </body>
+</html>
